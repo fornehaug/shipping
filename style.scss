@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    max-width: 1800px;
+    // border: solid 2px gold;
+}
+
+section {
+    padding: 1em;
+    // border: dotted 2px pink;
+}
+
+
+
+section.header {
+    background:navy;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.meny {
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding-top: 0.9rem;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 0.3em;
+        color: whitesmoke;
+    }
+    
+}
+
+.hero {
+    background: url(images/large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8em;
+    color: white;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+section.info {
+    background: #FFCC00;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    li {
+        margin-left: 10px;
+        list-style-type: square;
+    }
+}
+
+.inner-frame {
+    display: inline-block;
+    text-align: left;
+    justify-self: center;
+}
+
+section.footer {
+    text-align: center;
+}
+
+.footer-frame {
+    display: grid;
+    background: white;
+    place-items: center;
+    
+
+   li {
+       list-style: none;
+       margin-left: -30px;
+   }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1020px) {
+    html {
+        font-size: 1.5rem;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-template-rows: 15% 60% auto;
+        grid-template-areas:
+            "header header"
+            "hero info"
+            "hero footer";
+        height: 100vh;
+    }
+
+    section.header {
+        grid-area: header;
+    }
+
+    section.hero {
+        grid-area: hero;
+    }
+
+    section.info {
+        grid-area: info;
+    }
+
+    section.footer {
+        grid-area: footer;
+    }
+}
