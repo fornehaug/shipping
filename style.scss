@@ -34,7 +34,7 @@ section {
 
 
 section.header {
-    background:navy;
+    background:black;
     display: flex;
     justify-content: space-between;
     color: whitesmoke;
@@ -50,7 +50,7 @@ section.header {
     ul {
         display: flex;
         margin: 0;
-        padding-top: 0.9rem;
+        padding-top: 0.8rem;
     }
 
     li {
@@ -86,7 +86,7 @@ section.info {
     text-align: center;
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     li {
@@ -141,14 +141,31 @@ section.footer {
 
     section.header {
         grid-area: header;
+
+        .logo {
+            font-size: 2.2rem;
+            padding-left: 1em;
+        }
+
+        .meny {
+            a {
+                font-size: 1.5rem;
+                padding-right: 1em;
+            }
+        }
     }
 
     section.hero {
         grid-area: hero;
+        padding-top: 18em;
     }
 
     section.info {
         grid-area: info;
+    }
+
+    .info-frame {
+        padding-top: 2em;
     }
 
     section.footer {

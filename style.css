@@ -29,7 +29,7 @@ section {
 }
 
 section.header {
-  background: navy;
+  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ section.header {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding-top: 0.9rem;
+  padding-top: 0.8rem;
 }
 
 .meny li {
@@ -83,7 +83,7 @@ section.info {
 }
 
 section.info h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 section.info li {
@@ -140,16 +140,28 @@ section.footer {
     -ms-grid-column-span: 2;
     grid-area: header;
   }
+  section.header .logo {
+    font-size: 2.2rem;
+    padding-left: 1em;
+  }
+  section.header .meny a {
+    font-size: 1.5rem;
+    padding-right: 1em;
+  }
   section.hero {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: hero;
+    padding-top: 18em;
   }
   section.info {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: info;
+  }
+  .info-frame {
+    padding-top: 2em;
   }
   section.footer {
     -ms-grid-row: 3;
